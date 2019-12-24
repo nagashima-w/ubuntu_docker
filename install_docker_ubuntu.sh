@@ -27,4 +27,4 @@ sudo apt install docker-ce docker-ce-cli containerd.io -y
 
 ## 現在のユーザーがsudoなしでdockerコマンド実行可能にする
 sudo gpasswd -a $USER docker
-sudo service docker restart
+sudo systemctl restart docker
