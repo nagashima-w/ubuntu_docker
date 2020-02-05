@@ -24,7 +24,11 @@ sudo add-apt-repository \
 sudo apt update -y
 sudo apt install docker-ce docker-ce-cli containerd.io -y
 
-
 ## 現在のユーザーがsudoなしでdockerコマンド実行可能にする
 sudo gpasswd -a $USER docker
 sudo systemctl restart docker
+
+## Docker-Composeのインストール
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
