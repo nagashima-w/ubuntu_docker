@@ -8,9 +8,10 @@ docker-composeも一緒に入る
 適当なディレクトリで以下のコマンドを実行
 
 ```bash
-git clone https://github.com/nagashima-w/ubuntu_docker.git; chmod +x ./ubuntu_docker/install_docker_ubuntu.sh; ubuntu_docker/install_docker_ubuntu.sh
+curl -sSf https://raw.githubusercontent.com/nagashima-w/ubuntu_docker/master/install_docker_ubuntu.sh | sh -s
 ```
 
 ※sudoを使うので途中でパスワードを求められる
 
-シェルスクリプトが完了したら、いったん `exit` して再ログインすればsudo不要でdockerコマンド実行可能
+処理が完了したら、いったん `exit` して再ログインすればsudo不要でdockerコマンド実行可能
+
